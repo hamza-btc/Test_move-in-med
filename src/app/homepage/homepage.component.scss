@@ -1,0 +1,121 @@
+.user-profile {
+  background: #fff;
+  border: 10px;
+  padding: 10px;
+  border-radius: 10px;
+
+  .profile-icon {
+    border-bottom: 1px solid #ccc;
+    .name {
+      display: flex;
+    }
+    .icon {
+      margin: 14px 10px 0 0;
+      color: #1892b4;
+    }
+    margin: 20px 14px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    .custom-button {
+      color: #18b46e;
+      padding: 4px 12px;
+      border-radius: 15px;
+      margin-left: 5px;
+      font-size: 12px;
+      border-color: transparent;
+    }
+    span {
+      font-size: 16px;
+      font-weight: bold;
+      padding-right: 5px;
+    }
+  }
+  .profile-row {
+    .flex-container {
+      display: flex;
+      .div {
+        margin: 10px;
+        padding: 20px;
+        font-size: 30px;
+      }
+    }
+  }
+
+  .patient-info-container {
+    display: flex;
+    width: 830px;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .info-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  .info-label {
+    font-weight: 600;
+    width: 200px;
+    font-size: 12px;
+  }
+
+  .info-value {
+    width: 209px;
+    word-break: break-all; 
+    padding-left: 10px;
+    .green {
+      color: #18b46e;
+      font-weight: 600;
+      font-size: 14px;
+  
+      i {
+        padding-right: 3px;
+      }
+    }
+    .blue {
+      color: #1892b4;
+      font-weight: 500;
+      font-size: 14px;
+    }
+  }
+  .chargement {
+    padding: 20px;
+    background-color: #faf9f7;
+    p {
+      color: #b3182a;
+      font-size: 18px;
+      font-weight: 500;
+      font-family: "Ubuntu", sans-serif;
+    }
+    text-align: center;
+    color: #2e3a3c;
+  }
+  .titre {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 10px;
+  }
+  ul {
+    li {
+      list-style-type: none;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .patient-info-container {
+    width: 100% !important;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .profile-icon {
+    display: block !important ;
+  }
+
+  img {
+    width: 100% !important;
+  }
+}
